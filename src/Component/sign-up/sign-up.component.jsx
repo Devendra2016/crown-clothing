@@ -49,25 +49,25 @@ class SignUp extends React.Component{
                 <form className='sign-up-form' onSubmit={this.handleSubmit}>
                     <FormInput type='text'
                     name='displayName'
-                    value={displayName}
+                    value={this.state.displayName}
                     onChange={this.handleChange}
                     label='Display Name' required/>
 
                     <FormInput type='text'
                     name='email'
-                    value={email}
+                    value={this.state.email}
                     onChange={this.handleChange}
                     label='email' required/>
                     
                     <FormInput type='password'
                     name='password'
-                    value={password}
+                    value={this.state.password}
                     onChange={this.handleChange}
                     label='password' required/>
 
                     <FormInput type='password'
                     name='confirmPassword'
-                    value={confirmPassword}
+                    value={this.state.confirmPassword}
                     onChange={this.handleChange}
                     label='confirmPassword' required/>
 
